@@ -1,0 +1,8 @@
+#content {
+	font-family: monospace;
+	max-width: 30em;
+	border-right: 1px solid silver;
+	border-left: 1px solid silver;
+	margin: auto;
+	padding: 10px;
+}
