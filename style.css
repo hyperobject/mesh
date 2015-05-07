@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Bookerly';
+  src: url('Bookerly-Regular.ttf') format('Truetype');
+}
+
 #content {
-	font-family: monospace;
-	max-width: 30em;
+	font-family: Bookerly, monospace;
+	max-width: 40em;
 	border-right: 1px solid silver;
 	border-left: 1px solid silver;
 	margin: auto;
 	padding: 10px;
+	line-height: 30px;
+}
+
+.blocks {
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-left: 1px solid #999;
+	margin: auto;
+	width: auto;
 }
