@@ -6,11 +6,9 @@
 #content {
 	font-family: Bookerly, monospace;
 	max-width: 40em;
-	border-right: 1px solid silver;
-	border-left: 1px solid silver;
 	margin: auto;
 	padding: 10px;
-	line-height: 30px;
+	line-height: 40px;
 }
 
 .blocks {
