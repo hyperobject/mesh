@@ -48,10 +48,10 @@
         blocks: [
             [' ', 'mesh broadcast %s', 'broadcast'],
             ['h', 'when I receive mesh %s', 'mesh_hat']
-        ]
+        ],
+        url: 'http://technoboy10.tk/mesh'
     };
-    
-    var url = "http://technoboy10.tk";
+
 
     // Register the extension
     ScratchExtensions.register('Mesh', descriptor, ext);
