@@ -1,6 +1,7 @@
 <html>
 	<head>
     <meta charset="utf8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
     <title>Mesh</title>
 
@@ -20,16 +21,22 @@
     
 </head>
 <div id="content">
+    <h1>Mesh for ScratchX</h1>
     Thanks for checking out the Mesh extension for Scratch! Here's how it works.
     <br /><br />
-    A block:
+    There are only two blocks in the mesh extension - a "broadcast mesh" block and a "when I receive mesh" block.
+    <br /><br />
+    The broadcast mesh block looks like this:
 <pre class="blocks">
-	when gf clicked
+	broadcast mesh [message name] :: grey
 </pre>
-    another block:
+It takes one string input, and sends a message with the input text to any projects using the mesh extension. 
+    <br /><br />
+    The "when I receive mesh" block looks like this:
     <pre class="blocks">
-        broadcast [message name]
+        when I receive mesh [message name] :: hat grey
     </pre>
+    It activates whenever mesh receives a message with the name from the text input from any project using mesh.
     
 </div>
 </html>

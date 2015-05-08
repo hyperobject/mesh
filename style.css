@@ -3,19 +3,27 @@
   src: url('Bookerly-Regular.ttf') format('Truetype');
 }
 
+html, body {
+	background-color: #EFEFEF;
+}
+
 #content {
-	font-family: Bookerly, monospace;
-	max-width: 40em;
+	background-color: #FFFFFF;
+	height: 97%;
+	font-family: "Bookerly", monospace;
+	max-width: 35em;
 	margin: auto;
 	padding: 10px;
-	line-height: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 35px;
 }
 
 .blocks {
 	padding-left: 10px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	border-left: 1px solid #999;
+	border-left: 1px solid #BBB;
 	margin: auto;
 	width: auto;
 }
