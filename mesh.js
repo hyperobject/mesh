@@ -35,8 +35,7 @@
     };
     
    ext.mesh_hat = function(name) {
-       console.log(name);
-       fb.child('broadcasts/' + name).on('value', function(snap){window['new'] = snap.val();}); // Make sure broadcasts are unique (don't activate twice)
+       fb.child('broadcasts/' + name).on('value', function(snap){window['new'] = snap.val();console.log(name);}); // Make sure broadcasts are unique (don't activate twice)
        if(window['last'] != window['new'] && window['new'] != window['sent']){
            window['last'] = window['new'];
            return true;
