@@ -9,7 +9,7 @@ html, body {
 
 #content {
 	background-color: #FFFFFF;
-	height: 97%;
+	height: auto;
 	font-family: "Bookerly", monospace;
 	max-width: 35em;
 	margin: auto;
