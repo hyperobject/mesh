@@ -28,13 +28,13 @@
     <br /><br />
     The broadcast mesh block looks like this:
 <pre class="blocks">
-	broadcast mesh [message name] :: grey
+	broadcast mesh [message name] :: extension
 </pre>
 It takes one string input, and sends a message with the input text to any projects using the mesh extension. 
     <br /><br />
     The "when I receive mesh" block looks like this:
     <pre class="blocks">
-        when I receive mesh [message name] :: hat grey
+        when I receive mesh [message name] :: hat extension
     </pre>
     It activates whenever mesh receives a message with the name from the text input from any project using mesh.
     
