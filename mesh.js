@@ -29,15 +29,15 @@
     
     ext.broadcast = function(name) {
         if (name.length > 0){ // blank broadcasts break firebase - not nice.
-        window['sent'] = Math.random();
-        fb.child('broadcasts/' + name).set(window['sent']); //Change value of broadcast so other clients get an update
+        window['sent-' + name] = Math.random(); // HUGE thanks to the folks at White Mountain Science for fixing the multiple broadcast bug! (lines 32-40)
+        fb.child('broadcasts/' + name).set(window['sent-' + name]); //Change value of broadcast so other clients get an update
         }
     };
     
    ext.mesh_hat = function(name) {
-       fb.child('broadcasts/' + name).on('value', function(snap){window['new'] = snap.val();console.log(name);}); // Make sure broadcasts are unique (don't activate twice)
-       if(window['last'] != window['new'] && window['new'] != window['sent']){
-           window['last'] = window['new'];
+       fb.child('broadcasts/' + name).on('value', function(snap){window['new-' + name] = snap.val();console.log(name);}); // Make sure broadcasts are unique (don't activate twice)
+       if(window['last-' + name] != window['new-' + name] && window['new-' + name] != window['sent-' + name]){
+           window['last-' + name] = window['new-' + name];
            return true;
        } else {
            return false;
